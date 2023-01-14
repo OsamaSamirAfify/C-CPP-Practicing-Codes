@@ -5,10 +5,10 @@ using namespace std;
 
 int main(){
     // Testing set with char
-    char config [10][2] = {"W","e","w","q","f","A","g","h","r","n"};
+    char config [][2] = {"W","e","w","q","f","A","g","h","r","n","a"};
     set <char> set_test;
 
-    for (int j=0; j<10; j++)
+    for (int j=0; j<11; j++)
         set_test.insert(config[j][0]);
 
     set<char>::iterator i;
@@ -29,6 +29,12 @@ int main(){
 
     for (k=set_test2.begin(); k!=set_test2.end(); k++){
         printf("%.3f ", *k);
+
     }
 
+    set<int> s={9,8,7}; set<int>::iterator it;
+    for (it=s.begin(); it!=s.end(); it++){
+        printf("\n\n%d ", *it);
+
+    }
 }
